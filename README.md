@@ -37,15 +37,14 @@ The various components we're using are in very active development so no guarante
 
 ## Some variables to set
 We'll be referencing some variables like `$VARIABLE_NAME` in the below steps. Here are all the ones we care about and the default value to set by pasting this into your console, **BE SURE TO REPLACE PROJECT ID WITH YOUR PROJECT**:
-```
-export PROJECT_ID=sandbox-12301230-1230z0  <-------- replace me bro
-export CLUSTER_NAME=ol-dirty-k8
-export ZONE=us-central1-c
 
-export TF_VAR_project_id=$PROJECT_ID
-export TF_VAR_cluster_name=$CLUSTER_NAME
-export TF_VAR_zone=$ZONE
-```
+    export PROJECT_ID=sandbox-12301230-1230z0  <-------- replace me bro
+    export CLUSTER_NAME=ol-dirty-k8
+    export ZONE=us-central1-c
+
+    export TF_VAR_project_id=$PROJECT_ID
+    export TF_VAR_cluster_name=$CLUSTER_NAME
+    export TF_VAR_zone=$ZONE
 
 **Note the TF_VAR ones are for terraform to use, we wont otherwise directly use them**
 
