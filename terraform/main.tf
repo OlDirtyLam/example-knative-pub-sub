@@ -50,9 +50,6 @@ resource "google_container_cluster" "ol_dirty_cluster" {
       disabled = false
     }
   }
-  provisioner "local-exec" {
-    command = "gcloud container clusters get-credentials ${var.cluster_name} --zone ${var.zone}"
-  }
 }
 
 resource "google_container_node_pool" "ol_dirty_nodes" {
