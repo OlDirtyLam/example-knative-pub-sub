@@ -69,7 +69,6 @@ From there on we interact directly with kubernetes via `kubectl`. We set up the 
     - After you complete creation click three dots under actions for your service account
     - Click `Create Key` and choose `json`
     - Save that generated file as `terraform/knative-example-sa-creds.json`
-
 - Modify `terraform/variables.tf` to put in your project id
 - Navigate to the terraform directory in your console and run...
     - `terraform init`
