@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: pub-sub-consumer
+  labels:
+    istio-injection: enabled
+
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: pub-sub-consumer
+  namespace: pub-sub-consumer
+spec:
+  template:
+    spec:
+      containers:
+        - name: pub-sub-consumer
+          image: gcr.io/__PROJECT_ID__/pub-sub-consumer:latest
+          imagePullPolicy: Always
